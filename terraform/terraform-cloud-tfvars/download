@@ -1,0 +1,29 @@
+# Terraform state — never commit these
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# tfvars files may contain secrets — exclude by default
+terraform.tfvars
+*.auto.tfvars
+
+# Keep the example file so others know what vars are needed
+!terraform.tfvars.example
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Terraform Cloud token — never commit
+.terraformrc
+terraform.rc
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

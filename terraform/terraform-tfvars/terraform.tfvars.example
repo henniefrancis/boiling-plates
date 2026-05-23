@@ -1,0 +1,26 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example
+#
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is automatically loaded by Terraform on every run —
+# no -var flags needed.
+#
+# IMPORTANT: Never commit terraform.tfvars to version control if it contains
+# sensitive values. Add it to .gitignore.
+# -----------------------------------------------------------------------------
+
+# -- Common --
+environment   = "dev"
+project       = "your-project-name"
+resource_name = "your-resource-name"
+
+# -- AWS --
+region = "us-east-1"
+
+# -- Azure (uncomment if using Azure) --
+# subscription_id = "your-subscription-id"
+# location        = "East US"
+
+# -- GCP (uncomment if using GCP) --
+# project_id = "your-gcp-project-id"
+# region     = "us-central1"
